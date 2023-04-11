@@ -1,0 +1,23 @@
+<html><head><title>Test Page</title><script>
+(function() {
+    'use strict';
+	
+    // Your code here...
+(function (w,d,s,o,f,js,fjs) {
+      w['InProductHelp']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+      js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+      js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+    }(window, document, 'script', 'iph', '//iph.zoominsoftware.io/widget.js'));
+    iph('init', { id: 14, host: "hpe-tcaas-be-dev.zoominsoftware.io" });
+				widgetSettings: {
+					includeQueryParams = true
+                 }	
+})();
+	
+</script></head>
+
+<body>
+<h1><a href="." onclick="iph('toggle');return false;">Click here to open Widget5 with special JSON</a></h1>
+
+</body>
+</html>

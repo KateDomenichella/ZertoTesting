@@ -1,0 +1,38 @@
+<html>
+<head>
+<script>
+(function() {
+    'use strict';
+	
+    // Your code here...
+(function (w,d,s,o,f,js,fjs) {
+      w['InProductHelp']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+      js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+      js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+    }(window, document, 'script', 'iph', '//iph.zoominsoftware.io/widget.js'));
+    iph('init', { id: 6, host: "hpe-tcaas-be-dev.zoominsoftware.io" });
+				   widgetSettings: {
+					homePageConfig: {
+						type: 'locationBasedQuery',
+						data: {
+							'/': [''],
+							'/\?param=*': ['']
+							},
+						includeQueryParams: true
+					}
+			}	
+})();
+	
+</script>
+</head>
+<body>
+<h1><a href="." onclick="iph('toggle');return false;">Click here to open the SDL Migration Dev Widget</a></h1>
+
+<p>Query parameter testing for Zerto (use of = and ? in a URL).</p>
+
+
+<p>Here is a <a href="./PageAwareness/virtual-sites.htm?context=addSite">link</a></p>
+<p>Here is another <a href="./PageAwareness/virtual-sites.htm?context=subtractSite">link</a></p>
+
+</body>
+</html>
