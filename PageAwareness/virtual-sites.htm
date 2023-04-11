@@ -8,16 +8,23 @@
       js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
       js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
     }(window, document, 'script', 'iph', '//iph.zoominsoftware.io/widget.js'));
-    iph('init', { id: 14, host: "hpe-tcaas-be-dev.zoominsoftware.io" });
+    iph('init', { id: 6, host: "hpe-tcaas-be-dev.zoominsoftware.io" });
 				widgetSettings: {
-					includeQueryParams = true
-                 }	
+					homePageConfig: {
+						type: 'locationBasedQuery',
+						data: {
+							'/': ['/bundle/dscc_bar_articles/page/bar_overview_dscc.html'],
+							'/\?param=*': ['/bundle/DisasterRecoveryOverview.HTML/page/Content/DSCC/Add_a_Site.htm']
+							},
+						includeQueryParams: true
+					}
+			}	
 })();
 	
 </script></head>
 
 <body>
-<h1><a href="." onclick="iph('toggle');return false;">Click here to open Widget5 with special JSON</a></h1>
+<h1><a href="." onclick="iph('toggle');return false;">Click here to open Widget6 with special JSON</a></h1>
 
 </body>
 </html>
