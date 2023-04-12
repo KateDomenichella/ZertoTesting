@@ -1,0 +1,37 @@
+
+<html><head><title>Test Page</title><script>
+
+(function (w,d,s,o,f,js,fjs) {
+      w['InProductHelp']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+      js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+      js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+    }(window, document, 'script', 'iph', '//iph.zoominsoftware.io/widget.js'));
+    iph('init', { id: 5, host: "hpe-tcaas-be-dev.zoominsoftware.io",
+
+  widgetSettings: {
+      homePageConfig: {
+		includeQueryParams: true,
+		type: 'locationBasedQuery',
+        data: {
+		 '/SDLMigration/': ['/bundle/callhome/page/callhome.html'],
+		 '/SDLMigration/*\?param=addSite': ['/bundle/block_storage_tiers/page/block_storage_tiers.html'],
+		 '/SDLMigration/*\?param=subtractSite': ['/bundle/dom_overview/page/dom_overview.html']
+		 },
+      }
+}
+
+	});
+	
+</script></head>
+
+<body>
+<!--<h1><a href="." onclick="iph('toggle');return false;">Click here to open Widget5</a></h1>-->
+<h1><a href="./">Click here to open Widget5</a></h1>
+
+
+
+<p>Here is a <a href="./index.html?param=addSite">link</a>.</p>
+<p>Here is another <a href="./index.html?param=subtractSite">link</a>.</p>
+
+</body>
+</html>
